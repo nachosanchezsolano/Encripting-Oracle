@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif
+}
+/****** start footer styles ******/
+
+footer{
+    display: flex;
+}
+.oneLogo {
+    height: 100px;
+    width: auto;
+}
+
+.aluraLogo{
+    height: max-content;
+    align-self: center;
+}
+
+.madeBy{
+    align-self: center;
+}
+
+
+/****** finish footer styles ******/
