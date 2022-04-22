@@ -5,46 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacho's Crypt</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-grid.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
-<body>
+<body class="container">
     <script src="/functions/encript.js"></script>
-    <header>
+    <header class="container">
         <h1>
             Challenge Oracle ONE Sprint 01:
             Construye un encriptador de texto con Javascript 
         </h1>
 
     </header>
-
-    <main>
+<div class="conteiner"></div>
+    <main class="row">
+        
         <form action="scryptFunction">
-            
-            <input type="text" name="textImput" id="textImput">
-
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit asperiores velit, sequi nesciunt quibusdam repudiandae sit assumenda, voluptatem, vel officiis molestiae consequuntur rem? Molestias labore nam recusandae laboriosam sapiente dignissimos.
-                
-
-            <output name="textoptput"><img src="/img/dontFoundMassageImg.png" alt="" class="dontFoundMassageImg"></output>
-
+        <div class="conteiner">
+            <div class="row">
+                <Textarea name="textImput" class="textImput col-sm-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae accusantium quibusdam facilis alias culpa nemo, cum hic voluptate nostrum mollitia exercitationem amet ullam quo ab non numquam animi deserunt.
+                </Textarea>
+                <output name="textoptput"><img src="/img/dontFoundMassageImg.png" alt="" class="dontFoundMassageImg col-sm-6">            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae accusantium quibusdam facilis alias culpa nemo, cum hic voluptate nostrum mollitia exercitationem amet ullam quo ab non numquam animi deserunt.
+                </output>
+            </div>  
+            <div class="row">
+            <button name="scrypt" class="button col-sm-6" id="scrypt"></button>
 
-            <button name="scrypt" class="button" id="scrypt"></button>
-
-            <button name="decrypt" class="button" id="decrypt"></button>
-
+            <button name="decrypt" class="button col-sm-6" id="decrypt"></button>
+            </div>
+        </div>
         </form> 
-
     </main>
 
-    <footer>
+    <footer class="row">
 
-        <img src="/img/oneLogo.png" alt="" class="oneLogo" >
-        <img src="/img/aluraLogo.png" alt="" class="aluraLogo">
+        <img src="/img/oneLogo.png" alt="" class="col-sm-2 oneLogo">
+        <img src="/img/aluraLogo.png" alt="" class="col-sm-2 aluraLogo">
 
-        <div class="madeBy">Elaborado por Jorge Ignacio Sánchez Solano</div>
+        <div class="madeBy col-sm-8">Elaborado por Jorge Ignacio Sánchez Solano</div>
 
 
     </footer>

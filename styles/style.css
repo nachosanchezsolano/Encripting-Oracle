@@ -1,26 +1,34 @@
 *{
     padding: 0;
     margin: 0;
-    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif
+    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
 }
-/****** start footer styles ******/
-
-footer{
-    display: flex;
-}
-.oneLogo {
-    height: 100px;
-    width: auto;
+                    /****** start main styles ******/
+.textImput{
+  height: auto;
+  width: 100%;
+  resize: none;
 }
 
+
+
+                     /****** finish main styles ******/
+
+
+
+
+
+                     /****** start footer styles ******/
 .aluraLogo{
-    height: max-content;
+    max-width: 50px;
+    max-height: 25px;
     align-self: center;
 }
-
+.oneLogo{
+    max-height: 75px;
+    width: auto;
+}
 .madeBy{
     align-self: center;
 }
-
-
-/****** finish footer styles ******/
+                       /****** finish footer styles ******/
