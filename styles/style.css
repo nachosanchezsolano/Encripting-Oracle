@@ -3,13 +3,27 @@
     margin: 0;
     Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
 }
-                    /****** start main styles ******/
-.textImput{
-  height: auto;
-  width: 100%;
-  resize: none;
+body{
+    padding: 1%;
+}                    /****** start main styles ******/
+form{
+    margin-left: 12px;
 }
-
+.textImput{
+    
+  resize: none;
+  height: auto;
+  min-height: 200px;
+}
+.button{
+    height: 80px;
+    width: 20rem;
+    justify-content: center;
+}
+.textImput,.button,.textOutput{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
                      /****** finish main styles ******/
