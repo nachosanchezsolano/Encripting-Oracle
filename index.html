@@ -11,7 +11,6 @@
 
 </head>
 <body>
-    <script src="/functions/encript.js"></script>
     <header>
         <div>
         <h1>
@@ -23,24 +22,21 @@
     </header>
 <div class="conteiner"></div>
     <main class="row">
-        
-        <form action="scryptFunction">
+    
         <div class="conteiner">
             <div class="row">
-                <Textarea name="textImput" class="textImput col-sm-6  col-xs-11">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vitae accusantium quibusdam facilis alias culpa nemo, cum hic voluptate nostrum mollitia exercitationem amet ullam quo ab non numquam animi deserunt.
+                <Textarea id="textImput" class="textImput col-sm-6  col-xs-11">
                 </Textarea>
                 <output name="textoptput" class=" textOutput col-sm-6 col-xs-11"><img src="/img/dontFoundMassageImg.png" alt="" class="dontFoundMassageImg">
                 
                 </output>
             </div>  
             <div class="row">
-            <button name="scrypt" class="button col-sm-6 col-xs-11" id="scrypt"></button>
+            <button name="scrypt" class="button col-sm-6 col-xs-11" id="scrypt" onclick=scryptFunction()>Encriptador de texto</button>
 
-            <button name="decrypt" class="button col-sm-6 col-xs-11" id="decrypt"></button>
+            <button name="decrypt" class="button col-sm-6 col-xs-11" id="decrypt" onclick=decryptFunction()>Desencriptador de texto</button>
             </div>
         </div>
-        </form> 
     </main>
 
     <footer class="conteiner">
@@ -51,5 +47,6 @@
         <div class="madeBy col-sm-8">Elaborado por Jorge Ignacio Sánchez Solano</div>
     </div>
     </footer>
+    <script src="/functions/encript.js" defer></script>
 </body>
 </html>
