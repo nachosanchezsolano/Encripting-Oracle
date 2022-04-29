@@ -25,7 +25,10 @@ form{
     margin-right: auto;
 }
 
+#dontFoundMassageImg{
 
+    display: flex ;
+}
                      /****** finish main styles ******/
 
 
