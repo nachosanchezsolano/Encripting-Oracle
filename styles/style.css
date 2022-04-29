@@ -15,19 +15,44 @@ form{
   height: auto;
   min-height: 200px;
 }
-.button{
-    height: 80px;
-    width: 20rem;
-    justify-content: center;
+
+.textOutput ,   .textImput{
+    border-radius: 20px;
+    background-color: #c3ccd3
 }
+.button{
+    /* buttons zise */
+    height: 80px;
+    width: 190px;
+    justify-content: center;
+    margin: 15px auto;
+
+
+    /* buttons esthetics */
+    font-size: 20px;
+    background-color: rgb(45 84 133 / 83%) ;
+    border-radius: 10px;
+    transition-duration:0.3s;
+    box-shadow: 0 rgb(86 117 157);
+
+}
+
+.button:hover{
+    background-color: rgb(12 58 114);
+    color: rgb(237 236 236);
+}
+.button:active{
+    background-color: rgb(12 58 114);
+    color: rgb(237 236 236);
+    box-shadow: rgb(86 117 157);
+    transform: translateY(4px);
+
+}
+
+
 .textImput,.button,.textOutput{
     margin-left: auto;
     margin-right: auto;
-}
-
-#dontFoundMassageImg{
-
-    display: flex ;
 }
                      /****** finish main styles ******/
 
