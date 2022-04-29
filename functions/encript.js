@@ -5,53 +5,34 @@ function scryptFunction(){
             /////// declared variables ///////
             
                         //text variables//
-            let textImput=document.getElementById("textImput").value;
-            let textEncrypt= Array.from(textImput);
+               let textImput=document.getElementById("textImput").value;
+                let textEncrypt= Array.from(textImput);
 
-            ///// replace characters///////
-            for(let i=0; i<=textEncrypt.length; i++){
-                        switch (textEncrypt[i]) {
-                                            case "a" : textEncrypt[i] = "ai";
-                                                            break;
-                                            case "e" : textEncrypt[i] = "enter";
-                                                            break;
-                                            case "i" : textEncrypt[i] = "imes";
-                                                            break;
-                                            case "o": textEncrypt[i] = "ober";
-                                                            break;
-                                            case "u": textEncrypt[i] = "ufat";
-                                                            break;
-                                            default : break;
-                                            }
-        }
-
-        textEncrypt = textEncrypt.toString();
-        let re = /,/gi;
-        textEncrypt = textEncrypt.replace(re,"");
-
-        console.log(textEncrypt);
-
-            /////import de text exctypted into de document//////
-
-
-        let imgAsk
-
-        if (imgAsk == false ){
-
-            let imgHide = document.getElementById("dontFoundMassageImg").style;
-
-            imgHide.display = "none"
-
-            imgAsk==true
-
+                ///// replace characters///////
+                for(let i=0; i<=textEncrypt.length; i++){
+                            switch (textEncrypt[i]) {
+                                                case "a" : textEncrypt[i] = "ai";
+                                                                break;
+                                                case "e" : textEncrypt[i] = "enter";
+                                                                break;
+                                                case "i" : textEncrypt[i] = "imes";
+                                                                break;
+                                                case "o": textEncrypt[i] = "ober";
+                                                                break;
+                                                case "u": textEncrypt[i] = "ufat";
+                                                                break;
+                                                default : break;
+                                                }
             }
 
-            document.getElementById("textoutput").innerHTML = textEncrypt
+            textEncrypt = textEncrypt.toString();
+            let re = /,/gi;
+            textEncrypt = textEncrypt.replace(re,"");
+            
+            /////import the text exctypted into de document//////
+ importTheText(textEncrypt);
 
-        }
-
-
-
+}
 
     ///////// decrypting funtion//////
 function decryptFunction(){
@@ -69,21 +50,27 @@ function decryptFunction(){
 
         console.log(textDecrypt);
 
-            /////import de text exctypted into de document//////
+            /////import the text decrypted into the document//////
+
+importTheText(textDecrypt);
+
+}
 
 
-        let imgAsk
+/////import the text exctypted into the document Funtion//////
+function importTheText(text){
 
-        if (imgAsk == false ){
+    let imgAsk
 
-            let imgHide = document.getElementById("dontFoundMassageImg").style;
+    if (imgAsk == false ){
 
-            imgHide.display = "none";
+        let imgHide = document.getElementById("dontFoundMassageImg").style;
 
-            imgAsk==true;
+        imgHide.display = "none";
 
-            }
-
-            document.getElementById("textoutput").innerHTML = textDecrypt;
+        imgAsk==true;
 
         }
+
+        document.getElementById("textoutput").innerHTML = text;
+}
