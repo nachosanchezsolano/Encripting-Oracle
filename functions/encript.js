@@ -95,5 +95,5 @@ function importTheText(text){
 
         }
 
-        document.getElementById("textoutput").value = text;
+        document.getElementById("textoutput").innerHTML = text;
 }

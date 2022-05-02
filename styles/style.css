@@ -19,7 +19,7 @@ form{
     border-radius: 10px;
     background-color: #c3ccd3;
     margin:10px 0 10px 0;
-    text-align: center;
+    word-wrap:break-word;1
 }
 
 #dontFoundMassageImg{
