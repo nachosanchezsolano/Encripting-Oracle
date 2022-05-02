@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/public/css/bootstrap-grid.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
@@ -25,13 +28,13 @@
     
         <div class="conteiner">
             <div class="row">
-                <Textarea id="textImput" class="textImput col-sm-6  col-xs-11">
-                </Textarea>
-                <output name="textoutput" class=" textOutput col-sm-6 col-xs-11"  id = "textoutput" >
+                <Textarea id="textImput" class="textImput col-sm-5  col-xs-11"></Textarea>
+                <textarea name="textoutput" class=" textOutput col-sm-5 col-xs-11"  id = "textoutput" disabled ="true" >
                     
                     <img src="/img/dontFoundMassageImg.png" alt="" id="dontFoundMassageImg">
+
                 
-                </output>
+                </textarea>
             </div>  
             <div class="row">
             <button name="scrypt" class="button col-sm-6" id="scrypt" onclick=scryptFunction()>Encriptador de texto</button>

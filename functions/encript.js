@@ -38,17 +38,40 @@ function scryptFunction(){
 function decryptFunction(){
 
                     //text variables//
-                    let  textDecrypt=document.getElementById("textImput").value;
 
+                    let textImput=document.getElementById("textImput").value;
+                    let textDecrypt= Array.from(textImput);
+    
                     ///// replace characters///////
+                    for(let i=0; i<=textDecrypt.length; i++)
+                    {
+                        if (textDecrypt[i]=="a" && textDecrypt[i+1]=="i")
+                        {
+                             textDecrypt.splice(i+1,1);
+                        }
+                        if(textDecrypt[i]=="e" && textDecrypt[i+1]=="n" && textDecrypt[i+2]=="t" && textDecrypt[i+3]=="e" && textDecrypt[i+4]=="r")
+                        {
+                            textDecrypt.splice(i+1,4);
+                        }
+                        if(textDecrypt[i]=="i" && textDecrypt[i+1]=="m" && textDecrypt[i+2]=="e" && textDecrypt[i+3]=="s")
+                        {
+                            textDecrypt.splice(i+1,3);
+                        }
+                        if(textDecrypt[i]=="o" && textDecrypt[i+1]=="b" && textDecrypt[i+2]=="e" && textDecrypt[i+3]=="r")
+                        {
+                            textDecrypt.splice(i+1,3);
+                        }
+                        if(textDecrypt[i]=="u" && textDecrypt[i+1]=="f" && textDecrypt[i+2]=="a" && textDecrypt[i+3]=="t")
+                        {
+                            textDecrypt.splice(i+1,3);
+                        }
 
-         textDecrypt =  textDecrypt.replace(/ai/g,"a");
-         textDecrypt =  textDecrypt.replace(/enter/g,"e");
-         textDecrypt =  textDecrypt.replace(/imes/g,"i");
-         textDecrypt =  textDecrypt.replace(/ober/g,"o");
-         textDecrypt =  textDecrypt.replace(/ufat/g,"u");
-
-        console.log(textDecrypt);
+                        
+                    }                       
+    
+                textDecrypt = textDecrypt.toString();
+                let re = /,/gi;
+                textDecrypt = textDecrypt.replace(re,"");
 
             /////import the text decrypted into the document//////
 
@@ -72,5 +95,5 @@ function importTheText(text){
 
         }
 
-        document.getElementById("textoutput").innerHTML = text;
+        document.getElementById("textoutput").value = text;
 }

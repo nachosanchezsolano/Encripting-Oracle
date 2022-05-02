@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    Font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+    font-family: 'Rubik', sans-serif;
 }
 body{
     padding: 1%;
@@ -9,16 +9,24 @@ body{
 form{
     margin-left: 12px;
 }
-.textImput{
-    
-  resize: none;
-  height: auto;
-  min-height: 200px;
-}
 
 .textOutput ,   .textImput{
-    border-radius: 20px;
-    background-color: #c3ccd3
+    border-style: solid;
+    border-width: 0;
+    resize: none;
+    height: auto;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #c3ccd3;
+    margin:10px 0 10px 0;
+    text-align: center;
+}
+
+#dontFoundMassageImg{
+
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
 }
 .button{
     /* buttons zise */
