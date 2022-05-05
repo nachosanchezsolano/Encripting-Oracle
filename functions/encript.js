@@ -97,3 +97,12 @@ function importTheText(text){
 
         document.getElementById("textoutput").innerHTML = text;
 }
+
+////Copy de textoutput////
+
+function copyString(){
+    var StringToCopyElement = document.getElementById('textoutput').innerText;
+    
+    navigator.clipboard.writeText(StringToCopyElement);
+
+}

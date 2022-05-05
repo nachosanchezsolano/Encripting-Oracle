@@ -28,22 +28,22 @@
     
         <div class="conteiner">
             <div class="row">
-                <Textarea id="textImput" class="textImput col-sm-5  col-xs-11"></Textarea>
-                <output  name="textoutput" class=" textOutput col-sm-5 col-xs-11"  id = "textoutput" disabled ="true" >
-                    
+                <Textarea id="textImput" class="col-sm-5  col-xs-11 text" ></Textarea>
+                <output  name="textoutput" class="col-sm-5 col-xs-11 text"  id = "textoutput" disabled ="true" >
                     <img src="img/dontFoundMassageImg.png" alt="" id="dontFoundMassageImg">
-                
                 </output >
             </div>  
             <div class="row">
-            <button name="scrypt" class="button col-sm-6" id="scrypt" onclick=scryptFunction()>Encriptador de texto</button>
+            <button name="scrypt" class="button col-sm-6" id="scrypt" onclick=scryptFunction()>Encriptar texto</button>
 
-            <button name="decrypt" class="button col-sm-6" id="decrypt" onclick=decryptFunction()>Desencriptador de texto</button>
+            <button name="decrypt" class="button col-sm-6" id="decrypt" onclick=decryptFunction()>Desencriptar texto</button>
+                
+            <button name="copyText" class="button col-sm-12" id="copyButton" onclick=copyString()>Copiar</button>
             </div>
         </div>
     </main>
 
-    <footer class="conteiner">
+    <footer class="conteiner footer">
         <div class="row">
         <img src="img/oneLogo.png" alt="" class="col-sm-2 oneLogo">
         <img src="img/aluraLogo.png" alt="" class="col-sm-2 aluraLogo">
