@@ -10,7 +10,7 @@ form{
     margin-left: 12px;
 }
 
-.textOutput ,   .textImput{
+.text{
     border-style: solid;
     border-width: 0;
     resize: none;
@@ -18,7 +18,7 @@ form{
     min-height: 200px;
     border-radius: 10px;
     background-color: #c3ccd3;
-    margin:10px 0 10px 0;
+    margin:10px auto 10px auto;
     word-wrap:break-word;
 }
 
